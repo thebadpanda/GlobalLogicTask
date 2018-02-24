@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GlobalLogicTask</string>
+    <string name="lock_button">Lock</string>
+    <string name="unlock_button">Unlock</string>
+    <string name="lock_x2_button">Lock x2</string>
+    <string name="unlock_x2_button">Unlock x2</string>
+    <string name="alert_disarmed">Alert Disarmed</string>
+    <string name="alert_armed">Alert Armed</string>
+
+
+</resources>

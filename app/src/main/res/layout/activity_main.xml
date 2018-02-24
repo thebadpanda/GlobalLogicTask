@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.arsenko.globallogictask.MainActivity">
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="120dp"
+        android:text="@string/lock_button"
+        android:id="@+id/lock_button"
+        android:onClick="onClick"
+        android:tag="@string/lock_button"
+
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lock_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="60dp"
+        android:text="@string/unlock_button"
+        android:id="@+id/unlock_button"
+        android:onClick="onClick"
+        android:tag="@string/lock_button"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lock_button"
+        android:layout_alignStart="@id/lock_button"
+        android:id="@+id/lock_x2_button"
+        android:text="@string/lock_x2_button"
+        android:onClick="onClick"
+        android:tag="@string/lock_x2_button"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/unlock_button"
+        android:layout_alignTop="@id/lock_x2_button"
+        android:id="@+id/unlock_x2_button"
+        android:text="@string/unlock_x2_button"
+        />
+
+    <TextView android:id="@+id/state_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorGreen"
+        android:text="@string/alert_disarmed"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"/>
+
+
+</RelativeLayout>
